@@ -1,0 +1,20 @@
+/* src/components/VehicleCard.css */
+.border-glow-active {
+  border: 2px solid #28a745; /* Green glow for active */
+  box-shadow: 0 0 15px 2px rgba(40, 167, 69, 0.6);
+}
+
+.border-glow-inactive {
+  border: 2px solid #6c757d; /* Gray glow for inactive */
+  box-shadow: 0 0 15px 2px rgba(108, 117, 125, 0.6);
+}
+
+.border-glow-reserved {
+  border: 2px solid #ffc107; /* Yellow glow for reserved */
+  box-shadow: 0 0 15px 2px rgba(255, 193, 7, 0.6);
+}
+
+.border-glow-default {
+  border: 2px solid #007bff; /* Blue glow for default */
+  box-shadow: 0 0 15px 2px rgba(0, 123, 255, 0.6);
+}

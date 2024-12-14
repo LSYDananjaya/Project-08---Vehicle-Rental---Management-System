@@ -1,0 +1,119 @@
+/* src/App.css */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent overflow on the root container */
+}
+
+.sidebar {
+  height: 100vh; /* Full viewport height */
+  width: 250px; /* Adjust the width as needed */
+  background: linear-gradient(
+    to right,
+    #343a40,
+    #495057
+  ); /* Gradient background */
+  position: fixed; /* Fixed position to make it stick */
+  top: 0;
+  left: 0;
+  overflow: hidden; /* Prevent scrolling in the sidebar */
+  padding: 20px; /* Padding for internal spacing */
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px; /* Adjust padding as needed */
+  border-radius: 8px; /* Rounded corners for links */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+.sidebar .nav-link.active {
+  background-color: #007bff; /* Active state background color */
+  color: #ffffff; /* Text color for active state */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for active state */
+}
+
+.sidebar .nav-link.active .sidebar-active-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4px; /* Width of the active indicator */
+  height: 100%;
+  background-color: #ffffff; /* Color of the active indicator */
+  border-radius: 0 4px 4px 0; /* Rounded corners for the indicator */
+}
+
+.main-content {
+  padding: 20px;
+  height: 100vh; /* Full viewport height */
+  width: calc(100% - 250px); /* Full width of screen minus sidebar width */
+  overflow-y: auto; /* Scrollable content */
+  background-color: #ffffff; /* White background for the main content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  border-radius: 0.5rem; /* Rounded corners */
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px; /* Optional: space between the sidebar and content */
+}
+
+.card {
+  border-radius: 0.5rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.hide-in-pdf {
+  display: none;
+}
+
+/* Add these styles in your CSS file or as inline styles */
+.preview-modal .modal-dialog {
+  max-width: 80%; /* Adjust as needed */
+  width: auto; /* Ensure it uses the max-width */
+}
+
+.preview-modal .modal-body {
+  text-align: center; /* Center the image */
+}
+
+.preview-modal .modal-body img {
+  max-width: 100%; /* Ensure image fits within the modal */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.modal-dialog {
+  max-width: 800px;
+}

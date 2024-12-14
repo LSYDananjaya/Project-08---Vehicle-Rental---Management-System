@@ -1,0 +1,48 @@
+.search-box .input-group-text {
+  background-color: #f8f9fa;
+}
+
+.filter-box .form-select {
+  background-color: #f1f1f1;
+  border-color: #ddd;
+}
+
+.vehicle-grid .card {
+  transition: box-shadow 0.3s ease;
+}
+
+.vehicle-grid .card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.vehicle-title {
+  font-family: "Russo One", sans-serif;
+}
+
+.vehicle-info {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #6b5b95, #d64161);
+  border: none;
+  color: white;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #d64161, #6b5b95);
+}
+
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
